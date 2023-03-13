@@ -73,13 +73,17 @@ git init
 
   ![](D:\project\GIT\images\git本地仓库&远程仓库的工作流程.png)
 
-+ 查看当前目录状态
+##### 查看当前目录状态
+
++  查看当前目录状态
 
   ```javascript
   git status
   ```
 
   ![](D:\project\GIT\images\查看当前目录git管理状态.png)
+
+##### 添加当前目录所有文件到暂存区
 
 + 添加当前目录所有文件到暂存区
 
@@ -93,8 +97,52 @@ git init
 
   ![](D:\project\GIT\images\把文件添加到暂存区后新的状态.png)
 
+##### 提交到本地仓库
+
 + 提交到本地仓库
 
   ```javascript
   git commit -m '描述'
   ```
+
+  ![](D:\project\GIT\images\保存到本地仓库.png)
+
++ 这里有个坑 git commit 不添加 -m '描述'有可能会出现这种情况或者直接报错
+
+  ![](D:\project\GIT\images\在commit时不添加描述可能会发生的情况.png)
+
+##### 查看本地仓库提交历史记录
+
++ 查看本地仓库提交历史记录
+
+  ```
+  git log
+  ```
+
+  ![](D:\project\GIT\images\查看提交本地仓库记录.png)
+
++ 查看所有的版本
+
+  > 使用git log 只能查看当前指针所在的版本之前的版本
+
+  ```
+  git reflog
+  ```
+
+##### 版本回退
+
++ 版本回退
+
+  ```
+  git reset --hard HEAD^
+  
+  git reset --hard HEAD^^
+  
+  git reset --hard HEAD~2
+  
+  git reset --hard 指定前6位commit
+  
+  git revert
+  ```
+
+

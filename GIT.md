@@ -250,3 +250,13 @@ git init
 
   ![](D:\project\GIT\images\在jaime分支上创建新的文件.png)
 
++ 在切回master分支对比之前必须提交到本地仓库
+
+  ![](D:\project\GIT\images\在切换分支回到master之前必须提交.png)
+
++ 在jaime分支查看日志
+
+  ![](D:\project\GIT\images\在jaime分支上查看日志.png)
+
++ 
+

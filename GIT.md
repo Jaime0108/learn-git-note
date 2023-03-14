@@ -258,5 +258,29 @@ git init
 
   ![](D:\project\GIT\images\在jaime分支上查看日志.png)
 
-+ 
++ 切回master分支
+
+  ![](D:\project\GIT\images\切回master分支.png)
+
+  ![](D:\project\GIT\images\切回master分支后jaime分支下的jaime文件消失了.png)
+
++ 合并分支
+
+  > 合并分支要切换到 你想要合并到的那条分支
+
+  ```javascript
+  git merge 要合并的分支的名称
+  ```
+
+  ![](D:\project\GIT\images\合并分支,出现了合并失败的状况.png)
+
+  > 这里出现了合并失败的情况，后面处理
+
+  ![](D:\project\GIT\images\合并后master分支也有jaime分支的内容了.png)
+
++ 合并冲突
+
+  ![](D:\project\GIT\images\master分支下utils文件的内容.png)
+
+  ![](D:\project\GIT\images\jaime分支下有同名的文件utils也有修改.png)
 

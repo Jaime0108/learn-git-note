@@ -145,4 +145,95 @@ git init
   git revert
   ```
 
++ 新建1.txt文件
+
+  ![](D:\project\GIT\images\新建1.txt文件.png)
+
++ 1.txt文件完成了1功能
+
+  ![](D:\project\GIT\images\项目完成1功能.png)
+
++ 完成1功能后提交到本地仓库
+
+  ![](D:\project\GIT\images\完成1功能提交到本地仓库.png)
+
++ 项目完成2功能
+
+  ![](D:\project\GIT\images\项目完成2功能.png)
+
++ 完成2功能提交到本地仓库
+
+  ![](D:\project\GIT\images\完成2功能提交到本地仓库.png)
+
++ 项目完成3功能
+
+  ![](D:\project\GIT\images\项目完成3功能.png)
+
++ 完成3功能提交到本地仓库
+
+  ![](D:\project\GIT\images\完成3功能提交到本地仓库.png)
+
++ 版本回退
+
+  ![](D:\project\GIT\images\版本回退.png)
+
++ 版本回退后git的结果
+
+  ![](D:\project\GIT\images\回退版本git的结果.png)
+
++ 版本回退后1.txt文件的结果
+
+  ![](D:\project\GIT\images\回退版本1.txt文件的结果.png)
+
+
+
+##### 回退到指定的版本
+
++ 使用reflog查看所有的记录
+
+  ![](D:\project\GIT\images\使用reflog查看所有的操作记录.png)
+
++ 使用git reset --hard 指定前6位commit 回退到指定的版本
+
+  ```
+  git reset --hard 指定前6位commit
+  ```
+
+##### 软回退
+
++ git reset --hard的这种方式是直接让本地仓库的内容回到工作区
+
++ 这样会直接修改本地工作区的代码
+
++ 使用软回退让本地仓库的代码回到暂存区，不会修改本地工作区代码
+
++ 就类似与撤销一条提交信息,重新commit
+
+  ```
+  git reset --soft HEAD^
+  ```
+
+##### revert撤销
+
++ 和reset的区别 工作区的代码的变化是一样的
++ reset的指针是直接移动，revert是会新生成一条记录 
+
+
+
+##### 查看分支
+
++ 查看分支
+
+  ```javascript
+  git branch
+  ```
+
+  ![](D:\project\GIT\images\使用git branch查看分支.png)
+
++ 创建分支
+
+  ```
+  git branch jaime
+  ```
+
 

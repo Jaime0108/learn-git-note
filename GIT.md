@@ -470,3 +470,15 @@ git init
 
 # 使用vscode集成工具
 
++ 1
+
+  ![](D:\project\GIT\images\使用vscode集成的git初始化本地仓库.png)
+
++ 2
+
+  ![](D:\project\GIT\images\使用vscode集成的git初始化本地仓库2.png)
+
++ 3
+
++ 
+

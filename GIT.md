@@ -230,6 +230,10 @@ git init
 
   ![](D:\project\GIT\images\使用git branch查看分支.png)
 
+
+
+##### 创建分支
+
 + 创建分支
 
   ```
@@ -237,6 +241,10 @@ git init
   ```
 
   ![](D:\project\GIT\images\创建分支并查看分支.png)
+
+
+
+##### 切换分支
 
 + 切换分支
 
@@ -264,6 +272,10 @@ git init
 
   ![](D:\project\GIT\images\切回master分支后jaime分支下的jaime文件消失了.png)
 
+
+
+##### 合并分支
+
 + 合并分支
 
   > 合并分支要切换到 你想要合并到的那条分支
@@ -278,7 +290,20 @@ git init
 
   ![](D:\project\GIT\images\合并后master分支也有jaime分支的内容了.png)
 
+
+
+##### 合并冲突
+
+> 合并冲突产生的原因 两个分支都同时修改同一个文件， 并且要合并
+
 + 合并冲突
 
   ![](D:\project\GIT\images\master分支下utils文件的内容.png)
 
+  ![](D:\project\GIT\images\jaime分支下有同名的文件utils也有修改.png)
+
+  ![](D:\project\GIT\images\在master分支下merge jaime分支 有两个文件冲突了.png)
+
+  ![](D:\project\GIT\images\utils文件的冲突情况.png)
+
+  ![](D:\project\GIT\images\手动解决utils文件的冲突，并重新commit.png)

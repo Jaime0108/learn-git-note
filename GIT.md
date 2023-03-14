@@ -236,4 +236,17 @@ git init
   git branch jaime
   ```
 
+  ![](D:\project\GIT\images\创建分支并查看分支.png)
+
++ 切换分支
+
+  ```
+  git checkout jaime
+  ```
+
+  ![](D:\project\GIT\images\切换分支并查看当前分支.png)
+
++ 在新分支上创建新的文件
+
+  ![](D:\project\GIT\images\在jaime分支上创建新的文件.png)
 

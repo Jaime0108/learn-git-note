@@ -236,4 +236,38 @@ git init
   git branch jaime
   ```
 
+  ![](D:\project\GIT\images\创建分支并查看分支.png)
 
++ 切换分支
+
+  ```
+  git checkout jaime
+  ```
+
+  ![](D:\project\GIT\images\切换分支并查看当前分支.png)
+
++ 在新分支上创建新的文件
+
+  ![](D:\project\GIT\images\在jaime分支上创建新的文件.png)
+
++ 在切回master分支对比之前必须提交到本地仓库
+
+  ![](D:\project\GIT\images\在切换分支回到master之前必须提交.png)
+
++ 在jaime分支查看日志
+
+  ![](D:\project\GIT\images\在jaime分支上查看日志.png)
+
++ 切回master分支
+
+  ![](D:\project\GIT\images\切回master分支.png)
+
+  ![](D:\project\GIT\images\切回master分支后jaime分支下的jaime文件消失了.png)
+
++ 合并分支
+
+  > 合并分支要切换到 你想要合并到的那条分支
+
+  ```javascript
+  git merge 要合并的分支的名称
+  ```

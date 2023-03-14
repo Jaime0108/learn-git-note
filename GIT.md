@@ -1,3 +1,14 @@
+# .gitignore
+
+```
+/node_modules  node_modules目录下全部忽略
+*.txt *通配符
+```
+
+
+
+
+
 
 
 # 常用命令
@@ -481,4 +492,3 @@ git init
 + 3
 
 + 
-

@@ -271,3 +271,14 @@ git init
   ```javascript
   git merge 要合并的分支的名称
   ```
+
+  ![](D:\project\GIT\images\合并分支,出现了合并失败的状况.png)
+
+  > 这里出现了合并失败的情况，后面处理
+
+  ![](D:\project\GIT\images\合并后master分支也有jaime分支的内容了.png)
+
++ 合并冲突
+
+  ![](D:\project\GIT\images\master分支下utils文件的内容.png)
+

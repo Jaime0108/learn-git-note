@@ -193,10 +193,10 @@ git init
 
   ![](D:\project\GIT\images\使用reflog查看所有的操作记录.png)
 
-+ 使用git reset --hard 指定前6位commit 回退到指定的版本
++ 使用git reset --hard 指定前7位commit 回退到指定的版本
 
   ```
-  git reset --hard 指定前6位commit
+  git reset --hard 指定前7位commit
   ```
 
 ##### 软回退（git reset --soft HEAD^）
@@ -213,9 +213,9 @@ git init
   git reset --soft HEAD^
   ```
 
-##### revert撤销
+##### revert版本回退，并且会生成一条记录
 
-+ 和reset的区别 工作区的代码的变化是一样的
++ 和reset的区别 工作区的代码的变化是一样的（工作区都会变）
 + reset的指针是直接移动，revert是会新生成一条记录 
 
 
@@ -262,7 +262,7 @@ git init
 
   ![](D:\project\GIT\images\在切换分支回到master之前必须提交.png)
 
-+ 在jaime分支查看日志
++ 在jaime分支查看日志，在master分支上是看不到jaime分支的日志的
 
   ![](D:\project\GIT\images\在jaime分支上查看日志.png)
 
@@ -349,6 +349,18 @@ git init
 
   ![](D:\project\GIT\images\添加远程仓库地址.png)
 
+
+
+##### 在本地查看连接到了哪些远端仓库
+
++ 在本地查看连接到了哪些远端仓库
+
+  ```
+  git branch -a
+  ```
+
+  ![](D:\project\GIT\images\在本地查看远端仓库.png)
+
 ##### 移除远程仓库（连接）
 
 + 移除远程仓库
@@ -364,7 +376,97 @@ git init
 + 推送到远程仓库
 
   ```
-  git push origin master:master
+  git push origin master（本地分支）:master（远程仓库的分支）
   
   简写：git push origin master
+  
+  git push -u origin master
+  *添加了-u的选项后，以后就可以直接git push 不用添加别名 和 分支了
+  *但是之前没有用过这个选项是不可以的
+  *以后想改就git push 新的地址别名 新的分支
   ```
+
+  ![](D:\project\GIT\images\推送到远程仓库要求提供token.png)
+
+  ![](D:\project\GIT\images\凭据管理.png)
+
+  ![](D:\project\GIT\images\使用push推送到远程仓库.png)
+
+
+
+##### 远程仓库拉取到本地仓库
+
++ 远程仓库拉取到本地仓库
+
+  > 只会拉取更新的文件，并且会自动的merge
+  >
+  > 会merge就有可能会出现合并冲突的问题
+  ```
+  git pull 远程仓库别名 分支
+  ```
+
+
+
+##### 推送到远程仓库失败的情况
+
++ 推送到远程仓库失败的情况
+
+  > 这不是冲突，是远程仓库有文件的变动（新增、删除、修改）
+
+  ![](D:\project\GIT\images\push失败的情况.png)
+
++ 你没有权限推送到远程仓库
+
+  > 这里没办法演示，就直接告诉你怎么做吧
+
+  ![](D:\project\GIT\images\添加这个仓库拥有push权限的成员.png)
+
++ 推送到远程仓库有冲突的情况
+
+  > 当本地 和 远程 都修改了同一个文件，就会有冲突
+
+  ![](D:\project\GIT\images\远程pull下来有冲突的情况.png)
+
+
+##### 克隆
+
++ 克隆
+
+  ```
+  git clone 仓库地址
+  ```
+
+
+
+##### 远程仓库分支
+
++ 把本地仓库的分支推送到远程仓库的分支（远程没有分支会自动生成）
+
+  ```
+  git chekcout login
+  
+  git push 远程仓库别名 login(本地仓库分支):login（远程仓库分支）
+  这样远程仓库就会生成login分支
+  ```
+
++ 拉取远程仓库分支
+
+  ```
+  git pull origin（远程仓库别名） login(远程仓库分支)
+  
+  git checkout login 
+  ```
+
++ 删除远程仓库分支
+
+  ```javascript
+  git push origin (空):要删除的分支
+  ```
+
+
+# 跨团队协作
+
+
+
+# 使用vscode集成工具
+

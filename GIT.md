@@ -45,7 +45,7 @@ git config --global user.email '1006788336@qq.com'
 
 
 
-### 初始化本地仓库
+### 初始化本地仓库（git init）
 
 > 在项目的文件夹下
 
@@ -73,7 +73,7 @@ git init
 
   ![](D:\project\GIT\images\git本地仓库&远程仓库的工作流程.png)
 
-##### 查看当前目录状态
+##### 查看当前目录状态（git status）
 
 +  查看当前目录状态
 
@@ -83,7 +83,7 @@ git init
 
   ![](D:\project\GIT\images\查看当前目录git管理状态.png)
 
-##### 添加当前目录所有文件到暂存区
+##### 添加当前目录所有文件到暂存区（git add .）
 
 + 添加当前目录所有文件到暂存区
 
@@ -97,7 +97,7 @@ git init
 
   ![](D:\project\GIT\images\把文件添加到暂存区后新的状态.png)
 
-##### 提交到本地仓库
+##### 提交到本地仓库（git commit -m ‘描述’）
 
 + 提交到本地仓库
 
@@ -111,7 +111,7 @@ git init
 
   ![](D:\project\GIT\images\在commit时不添加描述可能会发生的情况.png)
 
-##### 查看本地仓库提交历史记录
+##### 查看本地仓库提交历史记录（git log）
 
 + 查看本地仓库提交历史记录
 
@@ -129,7 +129,7 @@ git init
   git reflog
   ```
 
-##### 版本回退
+##### 版本回退（git reset --hard HEAD^）
 
 + 版本回退
 
@@ -187,7 +187,7 @@ git init
 
 
 
-##### 回退到指定的版本
+##### 回退到指定的版本(git reset --hard 指定前6位commit)
 
 + 使用reflog查看所有的记录
 
@@ -199,7 +199,7 @@ git init
   git reset --hard 指定前6位commit
   ```
 
-##### 软回退
+##### 软回退（git reset --soft HEAD^）
 
 + git reset --hard的这种方式是直接让本地仓库的内容回到工作区
 
@@ -220,7 +220,7 @@ git init
 
 
 
-##### 查看分支
+##### 查看分支（git branch）
 
 + 查看分支
 
@@ -232,7 +232,7 @@ git init
 
 
 
-##### 创建分支
+##### 创建分支（git branch 新分支名称）
 
 + 创建分支
 
@@ -244,7 +244,7 @@ git init
 
 
 
-##### 切换分支
+##### 切换分支（git checkout 分支名称）
 
 + 切换分支
 
@@ -274,7 +274,7 @@ git init
 
 
 
-##### 合并分支
+##### 合并分支（git merge 分支名称）
 
 + 合并分支
 
@@ -309,7 +309,7 @@ git init
   ![](D:\project\GIT\images\手动解决utils文件的冲突，并重新commit.png)
   
 
-##### 删除分支
+##### 删除分支（git branch -b 分支名称）
 
 + 删除分支
 
@@ -319,3 +319,52 @@ git init
 
   ![](D:\project\GIT\images\删除分支.png)
 
+
+
+
+
+# 远程仓库
+
+##### 查看远程仓库
+
++ 查看远程仓库
+
+  >remote 是远程的意思
+
+  ```
+  git remote -v
+  ```
+
+
+
+##### 添加（连接）远程仓库
+
++ 添加远程仓库
+
+  > 可以添加多个远程仓库的地址
+
+  ```
+  git remote add origin（远程仓库的别名） 远程仓库地址
+  ```
+
+  ![](D:\project\GIT\images\添加远程仓库地址.png)
+
+##### 移除远程仓库（连接）
+
++ 移除远程仓库
+
+  ```
+  git remote remove origin
+  ```
+
+
+
+##### 推送到远程仓库
+
++ 推送到远程仓库
+
+  ```
+  git push origin master:master
+  
+  简写：git push origin master
+  ```

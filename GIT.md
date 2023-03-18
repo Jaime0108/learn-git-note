@@ -46,11 +46,11 @@ git config --global user.email '1006788336@qq.com'
 
 + 执行命令生成的文件
 
-  ![](D:\project\GIT\images\执行设置用户签名命令生成的文件.png)
+  ![](GIT.assets/执行设置用户签名命令生成的文件.png)
 
 + 文件的具体内容信息
 
-  ![](D:\project\GIT\images\文件记录的用户信息.png)
+  ![](GIT.assets/文件记录的用户信息.png)
 
 
 
@@ -66,11 +66,11 @@ git init
 
 + 初始化
 
-  ![](D:\project\GIT\images\初始化git目录命令.png)
+  ![](GIT.assets/初始化git目录命令.png)
 
 + 初始化的结果
 
-  ![](D:\project\GIT\images\初始化的结果.png)
+  ![](GIT.assets/初始化的结果.png)
 
 
 
@@ -82,7 +82,7 @@ git init
 
 + 本地仓库 & 远程仓库工作流程图
 
-  ![](D:\project\GIT\images\git本地仓库&远程仓库的工作流程.png)
+  ![](GIT.assets/git本地仓库&远程仓库的工作流程.png)
 
 ##### 查看当前目录状态（git status）
 
@@ -92,7 +92,7 @@ git init
   git status
   ```
 
-  ![](D:\project\GIT\images\查看当前目录git管理状态.png)
+  ![](GIT.assets/查看当前目录git管理状态.png)
 
 ##### 添加当前目录所有文件到暂存区（git add .）
 
@@ -102,11 +102,11 @@ git init
   git add .
   ```
 
-  ![](D:\project\GIT\images\把当前目录下所有文件都添加到暂存区.png)
+  ![](GIT.assets/把当前目录下所有文件都添加到暂存区.png)
 
 + 把文件添加到暂存区后新的状态
 
-  ![](D:\project\GIT\images\把文件添加到暂存区后新的状态.png)
+  ![](GIT.assets/把文件添加到暂存区后新的状态.png)
 
 ##### 提交到本地仓库（git commit -m ‘描述’）
 
@@ -116,11 +116,11 @@ git init
   git commit -m '描述'
   ```
 
-  ![](D:\project\GIT\images\保存到本地仓库.png)
+  ![](GIT.assets/保存到本地仓库.png)
 
 + 这里有个坑 git commit 不添加 -m '描述'有可能会出现这种情况或者直接报错
 
-  ![](D:\project\GIT\images\在commit时不添加描述可能会发生的情况.png)
+  ![](GIT.assets/在commit时不添加描述可能会发生的情况.png)
 
 ##### 查看本地仓库提交历史记录（git log）
 
@@ -130,7 +130,7 @@ git init
   git log
   ```
 
-  ![](D:\project\GIT\images\查看提交本地仓库记录.png)
+  ![](GIT.assets/查看提交本地仓库记录.png)
 
 + 查看所有的版本
 
@@ -158,43 +158,43 @@ git init
 
 + 新建1.txt文件
 
-  ![](D:\project\GIT\images\新建1.txt文件.png)
+  ![](GIT.assets/新建1.txt文件.png)
 
 + 1.txt文件完成了1功能
 
-  ![](D:\project\GIT\images\项目完成1功能.png)
+  ![](GIT.assets/项目完成1功能.png)
 
 + 完成1功能后提交到本地仓库
 
-  ![](D:\project\GIT\images\完成1功能提交到本地仓库.png)
+  ![](GIT.assets/完成1功能提交到本地仓库.png)
 
 + 项目完成2功能
 
-  ![](D:\project\GIT\images\项目完成2功能.png)
+  ![](GIT.assets/项目完成2功能.png)
 
 + 完成2功能提交到本地仓库
 
-  ![](D:\project\GIT\images\完成2功能提交到本地仓库.png)
+  ![](GIT.assets/完成2功能提交到本地仓库.png)
 
 + 项目完成3功能
 
-  ![](D:\project\GIT\images\项目完成3功能.png)
+  ![](GIT.assets/项目完成3功能.png)
 
 + 完成3功能提交到本地仓库
 
-  ![](D:\project\GIT\images\完成3功能提交到本地仓库.png)
+  ![](GIT.assets/完成3功能提交到本地仓库.png)
 
 + 版本回退
 
-  ![](D:\project\GIT\images\版本回退.png)
+  ![](GIT.assets/版本回退.png)
 
 + 版本回退后git的结果
 
-  ![](D:\project\GIT\images\回退版本git的结果.png)
+  ![](GIT.assets/回退版本git的结果.png)
 
 + 版本回退后1.txt文件的结果
 
-  ![](D:\project\GIT\images\回退版本1.txt文件的结果.png)
+  ![](GIT.assets/回退版本1.txt文件的结果.png)
 
 
 
@@ -202,7 +202,7 @@ git init
 
 + 使用reflog查看所有的记录
 
-  ![](D:\project\GIT\images\使用reflog查看所有的操作记录.png)
+  ![](GIT.assets/使用reflog查看所有的操作记录.png)
 
 + 使用git reset --hard 指定前7位commit 回退到指定的版本
 
@@ -239,7 +239,7 @@ git init
   git branch
   ```
 
-  ![](D:\project\GIT\images\使用git branch查看分支.png)
+  ![](GIT.assets/使用git branch查看分支.png)
 
 
 
@@ -251,7 +251,7 @@ git init
   git branch jaime
   ```
 
-  ![](D:\project\GIT\images\创建分支并查看分支.png)
+  ![](GIT.assets/创建分支并查看分支.png)
 
 
 
@@ -263,25 +263,25 @@ git init
   git checkout jaime
   ```
 
-  ![](D:\project\GIT\images\切换分支并查看当前分支.png)
+  ![](GIT.assets/切换分支并查看当前分支.png)
 
 + 在新分支上创建新的文件
 
-  ![](D:\project\GIT\images\在jaime分支上创建新的文件.png)
+  ![](GIT.assets/在jaime分支上创建新的文件.png)
 
 + 在切回master分支对比之前必须提交到本地仓库
 
-  ![](D:\project\GIT\images\在切换分支回到master之前必须提交.png)
+  ![](GIT.assets/在切换分支回到master之前必须提交.png)
 
 + 在jaime分支查看日志，在master分支上是看不到jaime分支的日志的
 
-  ![](D:\project\GIT\images\在jaime分支上查看日志.png)
+  ![](GIT.assets/在jaime分支上查看日志.png)
 
 + 切回master分支
 
-  ![](D:\project\GIT\images\切回master分支.png)
+  ![](GIT.assets/切回master分支.png)
 
-  ![](D:\project\GIT\images\切回master分支后jaime分支下的jaime文件消失了.png)
+  ![](GIT.assets/切回master分支后jaime分支下的jaime文件消失了.png)
 
 
 
@@ -295,11 +295,11 @@ git init
   git merge 要合并的分支的名称
   ```
 
-  ![](D:\project\GIT\images\合并分支,出现了合并失败的状况.png)
+  ![](GIT.assets/合并分支,出现了合并失败的状况.png)
 
   > 这里出现了合并失败的情况，后面处理
 
-  ![](D:\project\GIT\images\合并后master分支也有jaime分支的内容了.png)
+  ![](GIT.assets/合并后master分支也有jaime分支的内容了.png)
 
 
 
@@ -309,15 +309,15 @@ git init
 
 + 合并冲突
 
-  ![](D:\project\GIT\images\master分支下utils文件的内容.png)
+  ![](GIT.assets/master分支下utils文件的内容.png)
 
-  ![](D:\project\GIT\images\jaime分支下有同名的文件utils也有修改.png)
+  ![](GIT.assets/jaime分支下有同名的文件utils也有修改.png)
 
-  ![](D:\project\GIT\images\在master分支下merge jaime分支 有两个文件冲突了.png)
+  ![](GIT.assets/在master分支下merge jaime分支 有两个文件冲突了.png)
 
-  ![](D:\project\GIT\images\utils文件的冲突情况.png)
+  ![](GIT.assets/utils文件的冲突情况.png)
 
-  ![](D:\project\GIT\images\手动解决utils文件的冲突，并重新commit.png)
+  ![](GIT.assets/手动解决utils文件的冲突，并重新commit.png)
   
 
 ##### 删除分支（git branch -b 分支名称）
@@ -328,7 +328,7 @@ git init
   git branch -d 指定分支名
   ```
 
-  ![](D:\project\GIT\images\删除分支.png)
+  ![](GIT.assets/删除分支.png)
 
 
 
@@ -358,7 +358,7 @@ git init
   git remote add origin（远程仓库的别名） 远程仓库地址
   ```
 
-  ![](D:\project\GIT\images\添加远程仓库地址.png)
+  ![](GIT.assets/添加远程仓库地址.png)
 
 
 
@@ -370,7 +370,7 @@ git init
   git branch -a
   ```
 
-  ![](D:\project\GIT\images\在本地查看远端仓库.png)
+  ![](GIT.assets/在本地查看远端仓库.png)
 
 ##### 移除远程仓库（连接）
 
@@ -397,11 +397,11 @@ git init
   *以后想改就git push 新的地址别名 新的分支
   ```
 
-  ![](D:\project\GIT\images\推送到远程仓库要求提供token.png)
+  ![](GIT.assets/推送到远程仓库要求提供token.png)
 
-  ![](D:\project\GIT\images\凭据管理.png)
+  ![](GIT.assets/凭据管理.png)
 
-  ![](D:\project\GIT\images\使用push推送到远程仓库.png)
+  ![](GIT.assets/使用push推送到远程仓库.png)
 
 
 
@@ -424,19 +424,19 @@ git init
 
   > 这不是冲突，是远程仓库有文件的变动（新增、删除、修改）
 
-  ![](D:\project\GIT\images\push失败的情况.png)
+  ![](GIT.assets/push失败的情况.png)
 
 + 你没有权限推送到远程仓库
 
   > 这里没办法演示，就直接告诉你怎么做吧
 
-  ![](D:\project\GIT\images\添加这个仓库拥有push权限的成员.png)
+  ![](GIT.assets/添加这个仓库拥有push权限的成员.png)
 
 + 推送到远程仓库有冲突的情况
 
   > 当本地 和 远程 都修改了同一个文件，就会有冲突
 
-  ![](D:\project\GIT\images\远程pull下来有冲突的情况.png)
+  ![](GIT.assets/远程pull下来有冲突的情况.png)
 
 
 ##### 克隆
@@ -483,11 +483,11 @@ git init
 
 + 1
 
-  ![](D:\project\GIT\images\使用vscode集成的git初始化本地仓库.png)
+  ![](GIT.assets/使用vscode集成的git初始化本地仓库.png)
 
 + 2
 
-  ![](D:\project\GIT\images\使用vscode集成的git初始化本地仓库2.png)
+  ![](GIT.assets/使用vscode集成的git初始化本地仓库2.png)
 
 + 3
 

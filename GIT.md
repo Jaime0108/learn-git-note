@@ -66,7 +66,7 @@ git init
 
 + 初始化
 
-  ![](GIT.assets/初始化git目录命令.png)
+  ![](./GIT.assets/初始化git目录命令.png)
 
 + 初始化的结果
 

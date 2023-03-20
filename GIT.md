@@ -46,11 +46,11 @@ git config --global user.email '1006788336@qq.com'
 
 + 执行命令生成的文件
 
-  ![](GIT.assets/执行设置用户签名命令生成的文件.png)
+  ![](../GIT.assets/执行设置用户签名命令生成的文件.png)
 
 + 文件的具体内容信息
 
-  ![](GIT.assets/文件记录的用户信息.png)
+  ![](../GIT.assets/文件记录的用户信息.png)
 
 
 
